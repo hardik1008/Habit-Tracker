@@ -1,0 +1,28 @@
+header{
+    height: 60px;
+    width: 100%;
+    background-color: #acc1bf85;;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  header>div{
+    padding: 10px;
+    position: absolute;
+    right: 50px;
+  }
+  .nav>div
+  {
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    color: white;
+  
+  }
+  .nav a  .fas{
+    font-size: 26px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    color:white !important;
+  }

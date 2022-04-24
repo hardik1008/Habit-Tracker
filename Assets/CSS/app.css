@@ -1,0 +1,171 @@
+.container
+{
+    position: absolute;
+    width: 65%;
+    height: 85%;
+    /* border: 1px solid black; */
+    top: 10%;
+    left: 18%;
+    background: linear-gradient(to bottom right,#4ca1af , #c4e0e5);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.section-views
+{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #3d3c46;
+    font-size: 26px;
+
+}
+.section-views>div{
+    position: relative;
+    top: 10px;
+}
+.add-habit
+{
+    position: relative;
+    top: 10px;
+    left: 3%;
+    
+}
+input[type=text]
+{
+    width: 70%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: rgb(226, 219, 219);
+    transition: 0.3s ease-in-out;
+}
+input[type=text]:focus
+{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* border: 0.3px solid gray; */
+}
+input[type=submit]
+{
+    width: 20%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(70, 92, 151);
+    transition: 0.3s ease-in-out;
+}
+input[type=submit]:focus
+{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* border: 0.3px solid gray; */
+}
+input[type=submit]:hover
+{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* border: 0.3px solid gray; */
+}
+/* adding styles to list of habits */
+.habit-list-container
+{
+    position: relative;
+    max-height:76%;
+    top: 25px;
+    overflow-y: scroll;
+}
+
+
+.habit-list
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+/*====================== Adding styles to habit item============== */
+.habit-list .habit-item
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rgb(139 176 179)
+  
+}
+.habit-item .name-buttn
+{
+    display: flex;
+    margin-right: 4px !important;
+    /* justify-content: space-around; */
+}
+.habit-item .fa-star
+{
+    color: rgb(63, 62, 62);
+    font-size: 30px;
+    padding: 5px;
+}
+.habit-item .habit-name
+{
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.habit-item .habit-item-infoBt
+{
+    display: flex;
+    position: relative;
+    right: 10%;
+}
+ 
+.habit-item .habit-item-info
+{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 4px;
+}
+.fa-trash-alt
+{
+    position: relative;
+    padding: 5px;
+    padding-top: 10px;
+    padding-left: 65%;
+    font-size: 20px;
+    color: rgb(117, 31, 31);
+}
+.fav-button .fas
+{
+    
+    color: rgb(227, 241, 25);
+}
+a {
+    color: #8cb7dd;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+
+  /* =========================================== */

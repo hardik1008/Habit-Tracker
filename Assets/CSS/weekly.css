@@ -1,0 +1,123 @@
+.container
+{
+    position: absolute;
+    width: 65%;
+    height: 85%;
+    /* border: 1px solid black; */
+    top: 10%;
+    left: 18%;
+    background: linear-gradient(to bottom right,#4ca1af , #c4e0e5);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.section-views
+{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #3d3c46;
+    font-size: 26px;
+
+}
+.section-views>div{
+    position: relative;
+    top: 10px;
+}
+
+/* ==============styles on display icons ================================*/
+.disp-icons
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+ .fa-check-circle
+{
+    color: green;
+}
+ .fa-exclamation-triangle
+{
+    color: yellow;
+}
+ .fa-times-circle
+{
+    color: red;
+}
+
+/* ==============styles on display days ================================*/
+.list-view
+{
+    position: relative;
+    top: 20px;
+    min-height:67%;
+    max-height:67%;
+    overflow-y: scroll;
+}
+.list-view .habit-name
+{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.display-flex
+{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.disp-days
+{
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    min-height: 30px;
+    background-color: #51a3c3;
+}
+
+/* ==============styles on .calender-view  ================================*/
+.calender-view
+{
+    position: relative;
+
+}
+.calender-view .cal-item
+{   text-align: center;
+    font-weight: 700;
+    height: 78px;
+    width: 78px;
+    margin-top: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.cal-item .fas
+{
+    font-size: 35px;
+}
+/* ==============styles on anchor tags ================================*/
+
+
+a {
+    color: #8cb7dd;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+
+
+
