@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/CSS/user_signin.css">
+<body>
+    <div class="center">
+      <h1>Login</h1>
+      <form action="/user/createSession"  method="post">
+        <div class="txt_field">
+            <input type="email" name="email" autocomplete="off" required>
+            <span></span>
+            <label>Email</label>
+          </div>
+        <div class="txt_field">
+          <input type="password" name="password" autocomplete="off" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <input type="submit" value="Sign in">
+        <div class="signup_link">
+			Not a member? <a href="/user/signup">Signup</a>
+        </div>
+      </form>
+    </div>
+  </body>

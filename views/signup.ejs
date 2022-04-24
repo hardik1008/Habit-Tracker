@@ -1,0 +1,36 @@
+
+<link rel="stylesheet" href="/CSS/user_signup.css">
+<body>
+    <div class="center">
+      <div class="card-image">	
+        <h2 class="card-heading">
+          Get started
+          <small>Let us create your account</small>
+        </h2>
+      </div>
+      <!-- <h1>Sign up</h1> -->
+      <form action="/user/createUser"  method="post">
+        
+        <div class="txt_field">
+            <input type="text" name="name" autocomplete="off" required>
+            <span></span>
+            <label>name</label>
+          </div>
+        <div class="txt_field">
+            <input type="email" name="email" autocomplete="off" required>
+            <span></span>
+            <label>Email</label>
+          </div>
+        <div class="txt_field">
+          <input type="password" name="password" autocomplete="off" required>
+          <span></span>
+          <label>Password</label>
+        </div>
+        <input type="submit" value="Sign up">
+        <div class="signup_link">
+          Already have an account? <a href="/user/signin">Signin</a>
+        </div>
+      </form>
+    </div>
+
+  </body>

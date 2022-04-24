@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/CSS/app.css">
+
+<body>
+    <div class="container">
+        <div class="section-views">
+            <div>
+                <a href="/">Detail View</a>
+            </div>
+            <div>
+                <a href="/weekly">Weekly View</a>
+            </div>
+        </div>
+        <div class="add-habit">
+            <form action="/habit/createHabit" method="POST">
+                <input type="text" name="habitname" placeholder="Enter New Habit" required>
+                <input type="submit" value="Add a Habit">
+            </form>
+        </div>
+        <div class="habit-list-container">
+            <ul class="habit-list">
+                <%for(habit of habits){%>
+                    <li class="habit-item">
+                        <div class="name-buttn">
+                            <div class="fav-button"><a href="/habit/fav/<%= habit._id%>"><i
+                                        class="<%if(habit.favourite){%>fas <%}else{%>far <%}%>  fa-star"></i></a></div>
+                            <div class="habit-name">
+                                <%= habit.habitname%>
+                            </div>
+                        </div>
+                        <div class="habit-item-infoBt">
+                            <div class="habit-item-info">
+                                <small><i class="fas fa-hand-point-right"></i> Created On: <%= habit.date%></small></lbr>
+                                <small><i class="fas fa-hand-point-right"></i> Completed days: <%= habit.maxStreak%></small></lbr>
+                                <small><i class="fas fa-hand-point-right"></i> Longest Streak: <%= habit.maxStreak%>/<%= habit.Totaldays%></small>
+                            </div>
+                            <div>
+                                <p><a href="/habit/delete/<%= habit._id%>"><i class="fas fa-trash-alt"></i></a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <%}%>
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
