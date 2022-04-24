@@ -48,5 +48,3 @@
   <li>You can keep track of the longest streak and the number of days the user completed that habit</li>
 </ul>
 <h1>Git Clone</h1>
-To use this repository in your local system </br>
-<span>git clone https://github.com/BhagavanMarpadaga/Habit-tracker.git</span>
